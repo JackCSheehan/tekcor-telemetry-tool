@@ -30,3 +30,6 @@ with col2:
 
 "#### Flight Ground Track"
 st.pydeck_chart(getMapVis())
+
+"#### Raw Flight Data"
+st.table(getRawData())

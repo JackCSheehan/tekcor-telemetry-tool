@@ -50,3 +50,6 @@ def getMapVis():
     )
 
     return pdk.Deck(pointLayer, map_provider = "mapbox", map_style = pdk.map_styles.SATELLITE)
+
+def getRawData():
+    return DATA
