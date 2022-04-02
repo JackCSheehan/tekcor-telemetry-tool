@@ -14,22 +14,19 @@ col1, col2 = st.columns(2)
 altitudeVis = getAltitudeVis()
 velocityVis = getVelocityVis()
 tempVis = getTempVis()
-accelerationVis = getAccelerationVis()
+pressureVis = getPressureVis()
 
 with col1:
-    "#### Altitude"
+    "#### Altitude (m)"
     st.altair_chart(altitudeVis, use_container_width = True)
-    r"#### Velocity"
+    r"#### Vertical Velocity (m/s)"
     st.altair_chart(velocityVis, use_container_width = True)
 
 with col2:
-    "#### Temperature"
+    "#### Temperature (°C)"
     st.altair_chart(tempVis, use_container_width = True)
-    r"#### Acceleration"
-    st.altair_chart(accelerationVis, use_container_width = True)
-
-"#### Flight Ground Track"
-st.pydeck_chart(getMapVis())
+    r"#### Pressure (Pa)"
+    st.altair_chart(pressureVis, use_container_width = True)
 
 "#### Raw Flight Data"
 st.table(getRawData())
