@@ -1,12 +1,11 @@
 import streamlit as st
 from vis import *
 
-
 # Streamlit settings
 st.set_page_config(layout = "wide")
 
 '''
-# TECKOR Telemetry Tool
+# TEKCOR Telemetry Tool
 '''
 
 col1, col2 = st.columns(2)
